@@ -1,0 +1,25 @@
+flowchart LR
+ subgraph Juego["Diagrama de nuestro juego"]
+    direction TB
+        I(["Empezar partida"])
+        A(["El juego asigna un pez al azar"])
+        T(["Ver instrucciones"])
+        M(["Mover al pez"])
+        C(["Buscar comida y crecer"])
+        B(["Evitar la basura"])
+        V(["Ver vida y crecimiento"])
+        P(["Enfrentar peligros del mar"])
+        E(["Pasar a un pez más grande"])
+        F(["Pelear contra otro tiburón"])
+        R(["Ver el resultado de la partida"])
+        PA(["Pausar y continuar"])
+        RE(["Volver a jugar"])
+  end
+    J["Jugador"] --- I & T & M & C & B & V & P & F & R & PA & RE
+    I -.-> A
+    C -. Al crecer por completo .-> E
+    E -. Al llegar al tiburón tigre adulto .-> F
+    P -. Si termina la partida .-> R
+    F -.-> R
+
+    style Juego stroke:#2962FF,fill:#2962FF

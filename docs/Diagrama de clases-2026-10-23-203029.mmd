@@ -1,0 +1,79 @@
+---
+title: Objetivo 14ODS
+---
+classDiagram
+direction TB
+    class Partida {
+	    +estado : String
+	    +iniciar()
+	    +pausar()
+	    +continuar()
+	    +reiniciar()
+	    +cambiarPez()
+    }
+
+    class Pez {
+	    +vida : int
+	    +tamaño : float
+	    +crecimiento : float
+	    +mover()
+	    +comer()
+	    +crecer()
+	    +recibirDaño()
+    }
+
+    class TipoDePez {
+	    +nombre : String
+	    +nombreCientífico : String
+	    +tamañoMáximo : float
+	    +hábitat : String
+    }
+
+    class Mar {
+	    +dificultad : int
+	    +generarComida()
+	    +generarBasura()
+    }
+
+    class Comida {
+	    +tipo : String
+	    +valorDeCrecimiento : float
+    }
+
+    class Basura {
+	    +tipo : String
+	    +daño : int
+	    +causarDaño()
+    }
+
+    class PeligroEspecial {
+	    +tipo : String
+	    +probabilidad : float
+	    +activar()
+    }
+
+    class PeleaFinal {
+	    +vidaRival : int
+	    +tiempoLímite : float
+	    +mostrarTecla()
+	    +atacar()
+	    +esquivar()
+	    +terminarPelea()
+    }
+
+    class Resultado {
+	    +tipoFinal : String
+	    +mensaje : String
+	    +mostrarFinal()
+    }
+
+    Partida --> Pez : controla
+    Pez --> TipoDePez : pertenece a
+    Partida --> Mar : utiliza
+    Mar --> Comida : contiene
+    Mar --> Basura : contiene
+    Pez --> Comida : come
+    Basura --> Pez : daña
+    Partida --> PeligroEspecial : puede activar
+    Partida --> PeleaFinal : inicia
+    Partida --> Resultado : muestra
