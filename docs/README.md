@@ -1,4 +1,4 @@
-# Diagramas de nuestro videojuego educativo
+# Diagramas de nuestro videojuego
 
 En esta carpeta guardamos dos diagramas que hicimos para organizar nuestro videojuego sobre la contaminación del agua y la supervivencia de los peces. Nuestro proyecto está relacionado con el ODS 14: Vida submarina.
 
