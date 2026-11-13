@@ -28,4 +28,4 @@ National Aeronautics and Space Administration. (s. f.). *Appendix C: How to writ
 
 ## Uso de IA y revisión de fuentes
 
-Se usó ChatGPT/Codex para organizar la investigación, simplificar la redacción y proponer ejemplos y criterios de aceptación. Las explicaciones se contrastaron con el esquema de IEEE 830, la guía de NASA y la documentación de GitHub. También se consultó la ficha oficial de IEEE para comprobar que la norma fue sustituida. Los ejemplos son propios y no representan pruebas ya realizadas. El equipo debe revisar la versión final y confirmar los valores propuestos antes de aplicarlos al juego.
+Se usó ChatGPT para organizar la investigación, simplificar la redacción y proponer ejemplos y criterios de aceptación. Las explicaciones se contrastaron con el esquema de IEEE 830, la guía de NASA y la documentación de GitHub.
